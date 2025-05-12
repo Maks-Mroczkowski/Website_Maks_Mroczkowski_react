@@ -7,6 +7,7 @@ import { Home } from "./components/sections/home";
 import { About } from "./components/sections/about";
 import { Experience } from "./components/sections/experience";
 import { Projects } from "./components/sections/projects";
+import { Contact } from "./components/sections/contact";
 import "./index.css";
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <About/>
       <Experience/>
       <Projects/>
+      <Contact/>
     </div>
   ) : (
     <LoadingScreen onComplete={() => setIsLoaded(true)} />

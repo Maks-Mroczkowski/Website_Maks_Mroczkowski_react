@@ -1,12 +1,14 @@
+import {RevealOnScroll} from "../RevealOnScroll";
 export const About = () => {
 
     const ProgrammingLanguages = ["Python", "JavaScript", "C++", "Matlab"]
-    const FrameWorksLibraries = ["React", "TensorFlow", "NumPy", "Scikit-Learn", "Keras", 'Pandas', 'TailWindCSS', "HTML", "MatPlotLib" ]
+    const FrameWorksLibraries = ["React", "TensorFlow", "NumPy", "Scikit-Learn", "Keras", 'Pandas', 'TailWindCSS', "HTML", "MatPlotLib", 'OpenCV' ]
     const EngineeringSkills= ['Fusion360', 'SolidWorks', 'Fritzing', 'Bambu 3D Printing', 'Laser Cutting', 'Rapid Prototyping', ]
     const Technologies = ['Git', 'Figma', 'Github']
 
 
     return <section id="about" className="min-h-screen flex items-center justify-center py-20">
+        <RevealOnScroll>
 
         <div className="max-w-3xl mx-auto px-4">
             <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
@@ -26,7 +28,7 @@ export const About = () => {
                             {ProgrammingLanguages.map((tech, key)=>(
                                 <span 
                                 key={key}
-                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition ">
+                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all ">
                                     {tech}
                                 </span>
                             ))}
@@ -40,7 +42,7 @@ export const About = () => {
                             {FrameWorksLibraries.map((tech, key)=>(
                                 <span 
                                 key={key}
-                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition ">
+                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all ">
                                     {tech}
                                 </span>
                             ))}
@@ -56,7 +58,7 @@ export const About = () => {
                             {EngineeringSkills.map((tech, key)=>(
                                 <span 
                                 key={key}
-                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition ">
+                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all ">
                                     {tech}
                                 </span>
                             ))}
@@ -72,7 +74,7 @@ export const About = () => {
                             {Technologies.map((tech, key)=>(
                                 <span 
                                 key={key}
-                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,2246,0.2)] transition ">
+                                className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all ">
                                     {tech}
                                 </span>
                             ))}
@@ -96,11 +98,8 @@ export const About = () => {
 
                 </div>
             </div>
-
-
-
-
-
+        
         </div>
+        </RevealOnScroll>
     </section>
 }
