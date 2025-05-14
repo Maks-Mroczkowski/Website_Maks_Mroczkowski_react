@@ -2,7 +2,7 @@ import {RevealOnScroll} from "../RevealOnScroll";
 export const About = () => {
 
     const ProgrammingLanguages = ["Python", "JavaScript", "C++", "Matlab"]
-    const FrameWorksLibraries = ["React", "TensorFlow", "NumPy", "Scikit-Learn", "Keras", 'Pandas', 'TailWindCSS', "HTML", "MatPlotLib", 'OpenCV' ]
+    const FrameWorksLibraries = ["React", "TensorFlow", "NumPy", "Scikit-Learn", "Keras", 'Pandas', 'TailWindCSS', "HTML", "MatPlotLib", 'OpenCV' , 'SciPy']
     const EngineeringSkills= ['Fusion360', 'SolidWorks', 'Fritzing', 'Bambu 3D Printing', 'Laser Cutting', 'Rapid Prototyping', ]
     const Technologies = ['Git', 'Figma', 'Github']
 
@@ -15,9 +15,9 @@ export const About = () => {
                 Get To Know A little About Me 
             </h2>
 
-            <div className=" rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all">
+            <div className=" rounded-xl p-8 border-white/10 border hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,246,0,0.1)] "  >
                 <p className="text-gray-300 mb-6">
-                    I am passionate about building scalable software and hardware that improve peoples lives. I especially enjoy working on projects that aim to improve medicine and surgery. I have experience in data science, robotics, UI/UX design, frontend and backend development and machine learning algorithms. This summer I will be interning as a data scientist at Purdue University where I will be working on building data pipelines to integrate segmented pancreatic tumour scans into machine learning algorthims.   
+                    I am passionate about building and maintaining scalable software and hardware that improve peoples lives. I especially enjoy working on projects that aim to improve medicine and surgery. I have experience in data science, robotics, UI/UX design, frontend and backend development and machine learning algorithms. This summer I will be interning as a data scientist at Purdue University where I will be working on building data pipelines to integrate segmented pancreatic tumour scans into machine learning algorthims.   
 
                 </p>
 
@@ -85,7 +85,7 @@ export const About = () => {
 
 
             <div className="grid grid-cols-1 md:grid-cols2 gap-6 mt-8">
-                <div className=" p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all">
+                <div className=" p-6 rounded-xl border-white/10 border hover:-translate-y-1 transition-all hover:border-blue-500/30 hover:shadow-[0_2px_8px_rgba(59,246,0,0.1)] ">
                     <h3 className="text-xl font-bold mb-4">Education</h3>
                     <ul className="list-disc list-inside text-gray-300 space-y-2">
                         <li>
