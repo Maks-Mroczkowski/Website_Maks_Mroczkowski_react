@@ -107,7 +107,7 @@ export const Projects = () => {
                     <h3 className="text-xl font-bold mb-2">Linear Regression </h3>
                     <p className="text-gray-400 mb-4"> Collaborated with Imperial College London data Science Society on a linear regression algorhtim.</p>
                     <div className="flex flex-wrap gap-4">
-                        {['Python','Jupyter Notebook','Scikit-learn','Pandas','SciPxy','NumPy'].map((tech,key) => (
+                        {['Python','Jupyter Notebook','Scikit-learn','Pandas','SciPy','NumPy'].map((tech,key) => (
                         <span
                             key={key}
                             className="bg-blue-500/10 text-blue-500 py-1 px-3 rounded-full text-sm hover:bg-blue500/20 hover:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition ">
